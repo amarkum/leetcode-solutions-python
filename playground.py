@@ -29,3 +29,8 @@ print(dict(duplicate_count))
 map = {"python": 3, "java": 2, "go": 4}
 sorted_map = dict(sorted(map.items(), key=lambda e: e[1]))
 print(sorted_map)
+
+# 5. enumerate()
+words = ["while", "if", "else", "for"]
+index = enumerate(words)
+print(dict(index))
