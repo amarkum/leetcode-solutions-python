@@ -1,4 +1,6 @@
 # 1. convert list into string
+import collections
+
 words = ["l", "e", "e", "t", "c", "o", "d", "e"]
 text = "".join(words)
 print(text)
@@ -12,9 +14,16 @@ print(nums[-1])
 print(nums[-3])
 
 # 3. Count the element of the list
+# time consuming
 numbers = [2, 3, 6, 3, 2, 2]
 duplicate_count = {number: numbers.count(number) for number in numbers}
 print(duplicate_count)
+
+# efficient approach
+duplicate_count = collections.defaultdict(int)
+for num in numbers:
+    duplicate_count[num] = duplicate_count.get(num, 0) + 1
+print(dict(duplicate_count))
 
 # 4. Sort dictionary by value
 map = {"python": 3, "java": 2, "go": 4}
