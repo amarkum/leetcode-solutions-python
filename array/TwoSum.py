@@ -1,4 +1,6 @@
 """
+https://leetcode.com/problems/two-sum/
+
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -24,3 +26,9 @@ class TwoSum(object):
             for j in range(i + 1, len(nums)):
                 if required_number == nums[j]:
                     return [i, j]
+
+
+nums = [2, 7, 11, 15]
+target = 9
+two_sum = TwoSum()
+print(two_sum.twoSum(nums, target))

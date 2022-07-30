@@ -1,3 +1,5 @@
 .idea/vcs.xml
 .idea/*
 .idea
+.cache
+.pytest_cache
