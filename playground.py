@@ -17,6 +17,6 @@ duplicate_count = {number: numbers.count(number) for number in numbers}
 print(duplicate_count)
 
 # 4. Sort dictionary by value
-dictionary = {"python": 3, "java": 2, "go": 4}
-sorted_dict = dict(sorted(dictionary.items(), key=lambda e: e[1]))
-print(sorted_dict)
+map = {"python": 3, "java": 2, "go": 4}
+sorted_map = dict(sorted(map.items(), key=lambda e: e[1]))
+print(sorted_map)
