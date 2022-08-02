@@ -10,9 +10,8 @@ Explanation: The last word is "World" with length 5.
 """
 class LengthofLastWord:
     def lengthOfLastWord(self, s: str) -> int:
-        s = s.strip()
-        parts = s.split(" ")
-        return len(parts[-1].strip())
+        parts = s.split()
+        return len(parts[-1])
 
 
 Length_of_last_word = LengthofLastWord()
