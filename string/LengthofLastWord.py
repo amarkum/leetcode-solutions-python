@@ -12,7 +12,7 @@ class LengthofLastWord:
     def lengthOfLastWord(self, s: str) -> int:
         s = s.strip()
         parts = s.split(" ")
-        return len(parts[len(parts) - 1].strip())
+        return len(parts[-1].strip())
 
 
 Length_of_last_word = LengthofLastWord()
