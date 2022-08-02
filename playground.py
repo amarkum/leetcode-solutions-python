@@ -34,3 +34,8 @@ print(sorted_map)
 words = ["while", "if", "else", "for"]
 index = enumerate(words)
 print(dict(index))
+
+# 6. Find the start index of the substring in the word
+str = "leetcode"
+start_index = str.find("code")
+print(start_index)
