@@ -16,6 +16,7 @@ class ValidParenthesis:
         stack = []
         bracket_map = {')': '(', '}': '{', ']': '['}
         for char in s:
+            # iterate character, if the last word of the stack is closing bracket pop last element
             if stack and bracket_map.get(char) == stack[-1]:
                 stack.pop()
             else:
