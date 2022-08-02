@@ -39,3 +39,13 @@ print(dict(index))
 str = "leetcode"
 start_index = str.find("code")
 print(start_index)
+
+# 7. Convert Binary Number to decimal Number
+binary = "100"
+number = int(binary, 2)
+print(number)
+
+# 7. Convert Decimal Number to Binary Number
+decimal = 4
+binary = bin(decimal)[2:]
+print(binary)
