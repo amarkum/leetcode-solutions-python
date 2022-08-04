@@ -45,7 +45,12 @@ binary = "100"
 number = int(binary, 2)
 print(number)
 
-# 7. Convert Decimal Number to Binary Number
+# 8. Convert Decimal Number to Binary Number
 decimal = 4
 binary = bin(decimal)[2:]
 print(binary)
+
+# 9. Reverse a string in python
+word = "python"
+reverse = word[::-1]
+print(word, reverse)
