@@ -60,3 +60,8 @@ digits = [1, 2, 3, 4, 5]
 for i in range(len(digits)):
     number = digits[-(i + 1)]
     print(number)
+
+# 11. Extract Alpha-numeric characters from String
+text = "@$Coding;is$|Fun"
+text = "".join([ch for ch in text if ch.isalnum()]).lower()
+print(text)
