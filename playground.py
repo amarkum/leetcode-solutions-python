@@ -54,3 +54,9 @@ print(binary)
 word = "python"
 reverse = word[::-1]
 print(word, reverse)
+
+# 10. Iterate Python Element in reverse
+digits = [1, 2, 3, 4, 5]
+for i in range(len(digits)):
+    number = digits[-(i + 1)]
+    print(number)
