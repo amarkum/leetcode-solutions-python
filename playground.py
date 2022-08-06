@@ -57,6 +57,12 @@ print(word, reverse)
 
 # 10. Iterate Python Element in reverse
 digits = [1, 2, 3, 4, 5]
+
+# a. classic - step
+for i in range(len(digits) - 1, 0, -1):
+    print(digits[i])
+
+# b. negate index
 for i in range(len(digits)):
     number = digits[-(i + 1)]
     print(number)
