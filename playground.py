@@ -65,3 +65,17 @@ for i in range(len(digits)):
 text = "@$Coding;is$|Fun"
 text = "".join([ch for ch in text if ch.isalnum()]).lower()
 print(text)
+
+
+# 12. Methods to perform on the collection
+# array
+digits = [1, 2, 3, 4, 5]
+digits.insert(6)
+digits.remove(6)
+
+# set
+# seta | setb - union
+# seta & setb - intersection
+nums = set(digits)
+nums.add(7)
+nums.discard(7)
