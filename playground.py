@@ -27,7 +27,8 @@ print(dict(duplicate_count))
 
 # 4. Sort dictionary by value
 map = {"python": 3, "java": 2, "go": 4}
-sorted_map = dict(sorted(map.items(), key=lambda e: e[1]))
+# key = sort for every x in items(), x[1] > value
+sorted_map = dict(sorted(map.items(), key=lambda x: x[1]))
 print(sorted_map)
 
 # 5. enumerate()
@@ -75,7 +76,7 @@ print(text)
 # 12. Methods to perform on the collection
 # array
 digits = [1, 2, 3, 4, 5]
-digits.insert(6)
+digits.insert(6,6)
 digits.remove(6)
 
 # set
