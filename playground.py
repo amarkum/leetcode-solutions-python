@@ -76,7 +76,7 @@ print(text)
 # 12. Methods to perform on the collection
 # array
 digits = [1, 2, 3, 4, 5]
-digits.insert(6,6)
+digits.insert(6, 6)
 digits.remove(6)
 
 # set
@@ -90,3 +90,11 @@ nums.discard(7)
 # // - returns to the nearest whole number after division
 whole_sum = sum(nums)  # returns the sum of all the numbers
 # formula to calculate sum > (n * n+1) // 2
+
+# 14. Count characters in the String
+from collections import Counter
+
+counter = Counter(str)
+print(counter)
+# convert Counter object to Dict
+print(dict(counter))
