@@ -72,7 +72,6 @@ text = "@$Coding;is$|Fun"
 text = "".join([ch for ch in text if ch.isalnum()]).lower()
 print(text)
 
-
 # 12. Methods to perform on the collection
 # array
 digits = [1, 2, 3, 4, 5]
@@ -85,3 +84,8 @@ digits.remove(6)
 nums = set(digits)
 nums.add(7)
 nums.discard(7)
+
+# 13. Division Operator
+# // - returns to the nearest whole number after division
+whole_sum = sum(nums)  # returns the sum of all the numbers
+# formula to calculate sum > (n * n+1) // 2
